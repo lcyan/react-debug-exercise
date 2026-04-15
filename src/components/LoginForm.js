@@ -6,6 +6,7 @@ class LoginForm extends Component {
 
   onFormSubmit(event) {
     event.preventDefault();
+    this.props.handleLogin();
   }
 
   render() {
@@ -42,7 +43,7 @@ class LoginForm extends Component {
               <Col sm={8} className='mt6x'>
                 <button className='flat-button border-gray'
                         type='submit'
-                        onClick={this.handleLogin}>Next
+                        onClick={this.props.handleLogin}>Next
                         <Glyphicon className='pl2x' glyph='menu-right' />
                 </button>
               </Col>
