@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Navbar from '../components/Navbar';
-// import LoginForm from '../components/LoginForm';
+import Navbar from '../components/navbar';
+import LoginForm from '../components/LoginForm';
 import Footer from '../components/Footer';
 import { Glyphicon } from 'react-bootstrap';
 import '../styles/App.css';
@@ -14,6 +14,7 @@ class App extends Component {
       showLoginForm: true,
       showCheckmark: false
     };
+    this.handleLogin = this.handleLogin.bind(this);
     this.handleLogout = this.handleLogout.bind(this);
   }
 
